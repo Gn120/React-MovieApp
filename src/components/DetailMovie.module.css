@@ -1,0 +1,37 @@
+.movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  font-weight: 900;
+  margin: 20px 10px;
+  margin-bottom: 70px;
+  border-radius: 5px;
+  box-shadow: 0 13px 27px -5px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.movie_img {
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.movie_title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.genres {
+  display: flex;
+  gap: 18px;
+}
+.genres li {
+  margin-right: 18px;
+}

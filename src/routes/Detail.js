@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Movie from "../components/Movie";
+import DetailMovie from "../components/DetailMovie";
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -23,13 +23,16 @@ function Detail() {
       ) : (
         <div>
           {
-            <Movie
+            <DetailMovie
               key={movie.id}
               id={movie.id}
               coverImg={movie.medium_cover_image}
-              title={movie.title}
-              summary={movie.summary}
+              title={movie.title_long}
+              summary={movie.description_intro}
               genres={movie.genres}
+              rating={movie.rating}
+              runtime={movie.runtime}
+              like_count={movie.like_count}
             />
           }
         </div>
